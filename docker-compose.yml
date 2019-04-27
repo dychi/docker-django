@@ -1,0 +1,10 @@
+version: '3.7'
+
+services: 
+  django:
+    restart: always
+    build: ./django
+    expose: 
+      - "3031"
+    depends_on:
+      - postgres
