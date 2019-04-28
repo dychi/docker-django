@@ -1,10 +1,46 @@
 version: '3.7'
 
-services: 
-  django:
-    restart: always
-    build: ./django
-    expose: 
-      - "3031"
-    depends_on:
-      - postgres
+volumes:
+    mysite.db.volume:
+        name: mysite.db.volume
+
+services:
+    nginx:
+        image: nginx
+        container_name: mysite.nginx
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./nginx/conf:/etc/nginx/conf.d
+            - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
+            - ./static:/static
+        depends_on:
+            - web
+
+    db:
+        image: mysql
+        container_name: mysite.db
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: mysite
+            MYSQL_USER: djangouser
+            TZ: 'Asia/Tokyo'
+        volumes:
+            - mysite.db.volume:/var/lib/mysql
+            - ./sql:/docker-entrypoint-initdb.d
+        command: mysqld --default-authentication-plugin=mysql_native_password
+
+    web:
+        build: ./web
+        container_name: mysite.web
+        command: uwsgi --socket :8001 --module mysite.wsgi
+        volumes:
+            - ./src:/code
+            - ./static:/static
+        expose:
+            - "8001"
+        depends_on:
+            - db
+
