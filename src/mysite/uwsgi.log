@@ -301,3 +301,216 @@ uWSGI running as root, you can use --uid/--gid/--chroot options
 spawned uWSGI master process (pid: 1)
 spawned uWSGI worker 1 (pid: 6, cores: 1)
 Python auto-reloader enabled
+[pid: 6|app: 0|req: 1/1] 192.168.48.1 () {44 vars in 1798 bytes} [Sun Apr 28 22:46:09 2019] GET / => generated 93 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 2/2] 192.168.48.1 () {46 vars in 1820 bytes} [Sun Apr 28 22:46:10 2019] GET / => generated 93 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6|app: 0|req: 3/3] 192.168.48.1 () {46 vars in 1766 bytes} [Sun Apr 28 22:46:10 2019] GET /favicon.ico => generated 2137 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 4/4] 192.168.48.1 () {46 vars in 1820 bytes} [Sun Apr 28 22:46:20 2019] GET / => generated 151 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6|app: 0|req: 5/5] 192.168.48.1 () {46 vars in 1766 bytes} [Sun Apr 28 22:46:20 2019] GET /favicon.ico => generated 2137 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 6/6] 192.168.48.1 () {44 vars in 1803 bytes} [Sun Apr 28 22:46:41 2019] GET /admin/ => generated 3699 bytes in 62 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 7/7] 192.168.48.1 () {42 vars in 1779 bytes} [Sun Apr 28 22:46:42 2019] GET /admin/ => generated 3699 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 8/8] 192.168.48.1 () {44 vars in 1843 bytes} [Sun Apr 28 22:46:44 2019] GET /admin/blog/post/ => generated 3153 bytes in 59 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 9/9] 192.168.48.1 () {42 vars in 1697 bytes} [Sun Apr 28 22:46:44 2019] GET /admin/jsi18n/ => generated 3185 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 10/10] 192.168.48.1 () {44 vars in 1861 bytes} [Sun Apr 28 22:46:46 2019] GET /admin/blog/post/add/ => generated 7262 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 11/11] 192.168.48.1 () {42 vars in 1701 bytes} [Sun Apr 28 22:46:46 2019] GET /admin/jsi18n/ => generated 3185 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 12/12] 192.168.48.1 () {52 vars in 2049 bytes} [Sun Apr 28 22:47:25 2019] POST /admin/blog/post/add/ => generated 0 bytes in 38 msecs (HTTP/1.1 302) 8 headers in 526 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 13/13] 192.168.48.1 () {46 vars in 2113 bytes} [Sun Apr 28 22:47:25 2019] GET /admin/blog/post/ => generated 4504 bytes in 58 msecs (HTTP/1.1 200) 8 headers in 479 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 14/14] 192.168.48.1 () {42 vars in 1697 bytes} [Sun Apr 28 22:47:25 2019] GET /admin/jsi18n/ => generated 3185 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 15/15] 192.168.48.1 () {44 vars in 1871 bytes} [Sun Apr 28 22:47:32 2019] GET /admin/blog/post/1/change/ => generated 7601 bytes in 62 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 16/16] 192.168.48.1 () {42 vars in 1706 bytes} [Sun Apr 28 22:47:32 2019] GET /admin/jsi18n/ => generated 3185 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 17/17] 192.168.48.1 () {44 vars in 1852 bytes} [Sun Apr 28 22:47:38 2019] GET /admin/blog/ => generated 2412 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 18/18] 192.168.48.1 () {44 vars in 1828 bytes} [Sun Apr 28 22:47:40 2019] GET /admin/ => generated 4022 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 19/19] 192.168.48.1 () {44 vars in 1861 bytes} [Sun Apr 28 22:47:42 2019] GET /admin/blog/post/1/change/ => generated 7601 bytes in 57 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 20/20] 192.168.48.1 () {42 vars in 1706 bytes} [Sun Apr 28 22:47:42 2019] GET /admin/jsi18n/ => generated 3185 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 21/21] 192.168.48.1 () {44 vars in 1842 bytes} [Sun Apr 28 22:47:43 2019] GET /admin/ => generated 4022 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Not Found: /post/
+[pid: 6|app: 0|req: 22/22] 192.168.48.1 () {42 vars in 1777 bytes} [Sun Apr 28 22:47:55 2019] GET /post/ => generated 2119 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /post/1
+[pid: 6|app: 0|req: 23/23] 192.168.48.1 () {42 vars in 1779 bytes} [Sun Apr 28 22:47:57 2019] GET /post/1 => generated 2122 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 24/24] 192.168.48.1 () {42 vars in 1767 bytes} [Sun Apr 28 22:48:01 2019] GET / => generated 151 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./blog/views.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 6)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /code
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /code/mysite/django.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 28 22:52:58 2019] ***
+compiled with version: 6.3.0 20170516 on 27 April 2019 15:54:53
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 33d10b72c388
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.3 (default, Mar 27 2019, 23:40:30)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55a30d4dcde0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55a30d4dcde0 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 8, cores: 1)
+Python auto-reloader enabled
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 6, in post_list
+    posts = Post.object.filter(published_date__list=timezone.now()).order_by('published_date')
+AttributeError: type object 'Post' has no attribute 'object'
+[pid: 8|app: 0|req: 1/1] 192.168.48.1 () {46 vars in 1820 bytes} [Sun Apr 28 22:57:27 2019] GET / => generated 60413 bytes in 103 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8|app: 0|req: 2/2] 192.168.48.1 () {46 vars in 1766 bytes} [Sun Apr 28 22:57:27 2019] GET /favicon.ico => generated 2137 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./blog/views.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /code
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /code/mysite/django.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 28 22:58:19 2019] ***
+compiled with version: 6.3.0 20170516 on 27 April 2019 15:54:53
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 33d10b72c388
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.3 (default, Mar 27 2019, 23:40:30)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55ad22ee3de0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ad22ee3de0 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 10, cores: 1)
+Python auto-reloader enabled
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 6, in post_list
+    posts = Post.objects.filter(published_date__list=timezone.now()).order_by('published_date')
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1090, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "/usr/local/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1126, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'list' for DateTimeField or join on the field not permitted.
+[pid: 10|app: 0|req: 1/1] 192.168.48.1 () {46 vars in 1820 bytes} [Sun Apr 28 22:58:20 2019] GET / => generated 101051 bytes in 110 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 10|app: 0|req: 2/2] 192.168.48.1 () {46 vars in 1766 bytes} [Sun Apr 28 22:58:21 2019] GET /favicon.ico => generated 2137 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./blog/views.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 10)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /code
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /code/mysite/django.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 28 22:59:40 2019] ***
+compiled with version: 6.3.0 20170516 on 27 April 2019 15:54:53
+os: Linux-4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018
+nodename: 33d10b72c388
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.3 (default, Mar 27 2019, 23:40:30)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55afe0736de0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55afe0736de0 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 12, cores: 1)
+Python auto-reloader enabled
+[pid: 12|app: 0|req: 1/1] 192.168.48.1 () {46 vars in 1820 bytes} [Sun Apr 28 22:59:42 2019] GET / => generated 438 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 12|app: 0|req: 2/2] 192.168.48.1 () {46 vars in 1766 bytes} [Sun Apr 28 22:59:42 2019] GET /favicon.ico => generated 2137 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
