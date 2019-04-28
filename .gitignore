@@ -2,3 +2,6 @@
 *.pyo
 __pycache__
 *.swp
+
+# static ファイルを覗く
+static/*
