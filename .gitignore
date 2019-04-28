@@ -3,5 +3,8 @@
 __pycache__
 *.swp
 
-# static ファイルを覗く
+# static ファイルを除く
 static/*
+
+# logファイルを除く
+*.log
