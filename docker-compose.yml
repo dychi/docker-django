@@ -6,7 +6,7 @@ volumes:
 
 services:
     nginx:
-        image: nginx
+        image: nginx:1.15
         container_name: mysite.nginx
         ports:
             - "8000:8000"
@@ -18,7 +18,7 @@ services:
             - web
 
     db:
-        image: mysql
+        image: mysql:8.0
         container_name: mysite.db
         ports:
             - "3306:3306"
