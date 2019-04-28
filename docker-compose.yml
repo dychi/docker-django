@@ -35,7 +35,7 @@ services:
     web:
         build: ./web
         container_name: mysite.web
-        command: uwsgi --socket :8001 --module mysite.wsgi
+        command: uwsgi --ini /code/mysite/django.ini
         volumes:
             - ./src:/code
             - ./static:/static
